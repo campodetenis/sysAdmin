@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        form, h1{
+            text-align: center;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.1.0/build/pure-min.css" integrity="sha384-yHIFVG6ClnONEA5yB5DJXfW2/KC173DIQrYoZMEtBvGzmf0PKiGyNEqe9N6BNDBH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="">Home</a>
+        <a href="loginScreen.html">Login</a>
+        <a class="active">Sign up</a>
+    </div>
+
+        <div class="cabecera">
+            <h1>Sign up</h1>
+        </div>
+
+        <form class="pure-form" method="POST" action="/cgi-bin/signUp.cgi">
+            <fieldset style="display: block;">
+                <input  name="usuario" placeholder="username" />
+                <input type="password" name="password" placeholder="Password" />
+                <input type="email" name="email" placeholder="email"/>
+                <input name="direccion" placeholder="direccion postal"/>
+                <button type="submit" class="pure-button pure-button-primary">Sign in</button>
+                <label>profesor</label>
+                <input type="checkbox" name="esProfesor">
+            </fieldset>
+        </form>
+
+        <div>
+            <h1>Error. ALguno de los campos estaba vacio.</h1>
+        </div>
+</body>
+</html>
